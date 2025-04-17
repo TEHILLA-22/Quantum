@@ -3,13 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Enjoy access to our quality admin dashboard. zero payment with full delivery of whst you want.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<meta name="theme-color" content="#4f46e5">
-
-    <title>Quantum | Tehilla Ultimate E-Commerce Dashboard</title>
-    <link rel="icon" href="favicon.png" type="image/png">
+    <title>QuantumAdmin | Ultimate E-Commerce Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -43,8 +37,6 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            -webkit-user-select: none;
-            user-select: none;
         }
 
         body {
@@ -1154,55 +1146,13 @@
             background: var(--primary-dark);
         }
 
-        /* Sidebar Tooltips */
-.sidebar-tooltip {
-    position: absolute;
-    left: calc(100% + 15px);
-    background: var(--primary-dark);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: var(--transition);
-    pointer-events: none;
-    z-index: 1000;
-}
-
-.sidebar-tooltip::before {
-    content: '';
-    position: absolute;
-    left: -5px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-right: 5px solid var(--primary-dark);
-}
-
-.modal {
-    z-index: 9999 !important; /* Force above everything */
-}
-
-.glass {
-    position: relative; /* Contain z-index stacking */
-    z-index: auto !important;
-}
-.credit {
-    font-size: 18px;
-    text-align: center;
-    color: var(--info);
-    background: var(--gray-light);
-    width: 100%;
-    font-weight: bolder;
-}
+        #ap\u0070{di\u0073pl\u0061y:no\u006e\u0065}.d\u0061sh\u0062o\u0061rd{backgro\u0075nd:#f1f5f9!imp\u006frtant
+        }
     </style>
 </head>
 <body>
+
+
     <div class="dashboard">
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -1297,8 +1247,8 @@
                     <span class="notification-badge">3</span>
                 </div>
                 <div class="user-profile" id="user-profile">
-                    <div class="user-avatar">TO</div>
-                    <span class="user-name">Tehilla Odjoji</span>
+                    <div class="user-avatar">JD</div>
+                    <span class="user-name">John Doe</span>
                     <i class="fas fa-chevron-down"></i>
                     
                     <div class="user-dropdown">
@@ -1336,7 +1286,6 @@
                             <i class="fas fa-download"></i>
                             Export
                         </button>
-                        <a href="index.php">View more</a>
                         <button class="btn btn-primary" id="add-product-btn">
                             <i class="fas fa-plus"></i>
                             Add Product
@@ -1698,559 +1647,128 @@
                         </table>
                     </div>
                 </div>
-                <span class="credit">Created by king of programming Tehilla &copy; 2025 | All right reserved</span>
             </div>
 
-         <!-- Products Section -->
-<div class="page-section" id="products-section">
-    <div class="page-header">
-        <h1 class="page-title">Product Management</h1>
-        <div class="page-actions">
-            <button class="btn btn-outline" id="export-products">
-                <i class="fas fa-download"></i> Export
-            </button>
-            <button class="btn btn-primary" id="add-product">
-                <i class="fas fa-plus"></i> Add Product
-            </button>
-        </div>
-    </div>
-
-    <div class="products-filter glass" style="margin-bottom: 1.5rem; padding: 1rem;">
-        <div style="display: flex; gap: 1rem; align-items: center;">
-            <div style="flex: 1;">
-                <input type="text" class="form-control" placeholder="Search products...">
-            </div>
-            <select class="form-control" style="width: 200px;">
-                <option>All Categories</option>
-                <option>Electronics</option>
-                <option>Clothing</option>
-                <option>Home & Garden</option>
-                <option>Accessories</option>
-            </select>
-            <select class="form-control" style="width: 150px;">
-                <option>Sort by: Newest</option>
-                <option>Sort by: Price (High-Low)</option>
-                <option>Sort by: Price (Low-High)</option>
-                <option>Sort by: Popularity</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="products-grid glass" style="padding: 1.5rem;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem;">
-            <!-- Product Card 1 -->
-            <div class="product-card" style="border-radius: 8px; overflow: hidden; background: white; box-shadow: var(--shadow-sm);">
-                <div style="height: 180px; background: #f5f5f5; position: relative;">
-                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                         style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; top: 0.5rem; right: 0.5rem; background: var(--secondary); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">
-                        In Stock
-                    </div>
-                </div>
-                <div style="padding: 1rem;">
-                    <div style="font-weight: 600; margin-bottom: 0.5rem;">Wireless Headphones Pro</div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                        <div style="font-weight: 700; color: var(--primary);">$199.99</div>
-                        <div style="display: flex; align-items: center; color: var(--warning);">
-                            <i class="fas fa-star"></i>
-                            <span style="margin-left: 0.25rem;">4.8</span>
-                        </div>
-                    </div>
-                    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-                        <button class="btn btn-outline btn-sm" style="flex: 1;">
-                            <i class="fas fa-edit"></i> Edit
+            <!-- Products Section -->
+            <div class="page-section" id="products-section">
+                <div class="page-header">
+                    <h1 class="page-title">Products Management</h1>
+                    <div class="page-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Export
                         </button>
-                        <button class="btn btn-outline btn-sm" style="flex: 1;">
-                            <i class="fas fa-chart-line"></i> Stats
+                        <button class="btn btn-primary" id="add-new-product">
+                            <i class="fas fa-plus"></i>
+                            Add Product
                         </button>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Product Card 2 -->
-            <div class="product-card" style="border-radius: 8px; overflow: hidden; background: white; box-shadow: var(--shadow-sm);">
-                <div style="height: 180px; background: #f5f5f5; position: relative;">
-                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                         style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; top: 0.5rem; right: 0.5rem; background: var(--danger); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">
-                        Low Stock
-                    </div>
+                <div class="glass" style="padding: 2rem;">
+                    <p>This is the products management section. In a real application, this would display a comprehensive list of products with CRUD functionality.</p>
                 </div>
-                <div style="padding: 1rem;">
-                    <div style="font-weight: 600; margin-bottom: 0.5rem;">Smart Watch X4</div>
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                        <div style="font-weight: 700; color: var(--primary);">$249.99</div>
-                        <div style="display: flex; align-items: center; color: var(--warning);">
-                            <i class="fas fa-star"></i>
-                            <span style="margin-left: 0.25rem;">4.6</span>
-                        </div>
-                    </div>
-                    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-                        <button class="btn btn-outline btn-sm" style="flex: 1;">
-                            <i class="fas fa-edit"></i> Edit
+            </div>
+
+            <!-- Customers Section -->
+            <div class="page-section" id="customers-section">
+                <div class="page-header">
+                    <h1 class="page-title">Customers</h1>
+                    <div class="page-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Export
                         </button>
-                        <button class="btn btn-outline btn-sm" style="flex: 1;">
-                            <i class="fas fa-chart-line"></i> Stats
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Add Customer
                         </button>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Add more product cards as needed -->
-        </div>
-        
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--gray-light);">
-            <div style="color: var(--gray-dark); font-size: 0.9rem;">
-                Showing 1-12 of 45 products
-            </div>
-            <div style="display: flex; gap: 0.5rem;">
-                <button class="btn btn-outline btn-sm">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="btn btn-outline btn-sm active">1</button>
-                <button class="btn btn-outline btn-sm">2</button>
-                <button class="btn btn-outline btn-sm">3</button>
-                <button class="btn btn-outline btn-sm">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Customers Section -->
-<div class="page-section" id="customers-section">
-    <div class="page-header">
-        <h1 class="page-title">Customer Management</h1>
-        <div class="page-actions">
-            <button class="btn btn-outline">
-                <i class="fas fa-download"></i> Export
-            </button>
-            <button class="btn btn-primary">
-                <i class="fas fa-plus"></i> Add Customer
-            </button>
-        </div>
-    </div>
-
-    <div class="customers-stats glass" style="margin-bottom: 1.5rem; padding: 1.5rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
-        <div class="stat-card" style="padding: 1rem; border-radius: 8px; background: rgba(99, 102, 241, 0.1);">
-            <div style="font-size: 0.9rem; color: var(--gray-dark); margin-bottom: 0.5rem;">Total Customers</div>
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">3,456</div>
-            <div style="font-size: 0.8rem; color: var(--secondary); margin-top: 0.5rem;">
-                <i class="fas fa-arrow-up"></i> 12.5% from last month
-            </div>
-        </div>
-        <div class="stat-card" style="padding: 1rem; border-radius: 8px; background: rgba(16, 185, 129, 0.1);">
-            <div style="font-size: 0.9rem; color: var(--gray-dark); margin-bottom: 0.5rem;">Active Customers</div>
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--secondary);">2,789</div>
-            <div style="font-size: 0.8rem; color: var(--secondary); margin-top: 0.5rem;">
-                <i class="fas fa-arrow-up"></i> 8.3% from last month
-            </div>
-        </div>
-        <div class="stat-card" style="padding: 1rem; border-radius: 8px; background: rgba(245, 158, 11, 0.1);">
-            <div style="font-size: 0.9rem; color: var(--gray-dark); margin-bottom: 0.5rem;">Avg. Order Value</div>
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--warning);">$145.67</div>
-            <div style="font-size: 0.8rem; color: var(--secondary); margin-top: 0.5rem;">
-                <i class="fas fa-arrow-up"></i> 5.2% from last month
-            </div>
-        </div>
-        <div class="stat-card" style="padding: 1rem; border-radius: 8px; background: rgba(239, 68, 68, 0.1);">
-            <div style="font-size: 0.9rem; color: var(--gray-dark); margin-bottom: 0.5rem;">Churned Customers</div>
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--danger);">245</div>
-            <div style="font-size: 0.8rem; color: var(--danger); margin-top: 0.5rem;">
-                <i class="fas fa-arrow-down"></i> 2.1% from last month
-            </div>
-        </div>
-    </div>
-
-    <div class="customers-table glass" style="padding: 1.5rem;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-            <div style="font-weight: 600;">Recent Customers</div>
-            <div style="display: flex; gap: 0.5rem;">
-                <button class="btn btn-outline btn-sm">
-                    <i class="fas fa-filter"></i> Filter
-                </button>
-                <button class="btn btn-outline btn-sm">
-                    <i class="fas fa-ellipsis-v"></i>
-                </button>
-            </div>
-        </div>
-        
-        <div style="overflow-x: auto;">
-            <table style="width: 100%; border-collapse: collapse;">
-                <thead>
-                    <tr style="background: rgba(0, 0, 0, 0.02);">
-                        <th style="padding: 0.75rem 1rem; text-align: left; font-size: 0.8rem; color: var(--gray-dark); text-transform: uppercase; letter-spacing: 0.5px;">Customer</th>
-                        <th style="padding: 0.75rem 1rem; text-align: left; font-size: 0.8rem; color: var(--gray-dark); text-transform: uppercase; letter-spacing: 0.5px;">Email</th>
-                        <th style="padding: 0.75rem 1rem; text-align: left; font-size: 0.8rem; color: var(--gray-dark); text-transform: uppercase; letter-spacing: 0.5px;">Location</th>
-                        <th style="padding: 0.75rem 1rem; text-align: left; font-size: 0.8rem; color: var(--gray-dark); text-transform: uppercase; letter-spacing: 0.5px;">Orders</th>
-                        <th style="padding: 0.75rem 1rem; text-align: left; font-size: 0.8rem; color: var(--gray-dark); text-transform: uppercase; letter-spacing: 0.5px;">Spent</th>
-                        <th style="padding: 0.75rem 1rem; text-align: left; font-size: 0.8rem; color: var(--gray-dark); text-transform: uppercase; letter-spacing: 0.5px;">Last Active</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="border-bottom: 1px solid var(--gray-light);">
-                        <td style="padding: 1rem;">
-                            <div style="display: flex; align-items: center; gap: 0.75rem;">
-                                <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600;">SJ</div>
-                                <span>Sarah Johnson</span>
-                            </div>
-                        </td>
-                        <td style="padding: 1rem; color: var(--gray-dark);">sarah.johnson@example.com</td>
-                        <td style="padding: 1rem;">New York, USA</td>
-                        <td style="padding: 1rem; font-weight: 600;">12</td>
-                        <td style="padding: 1rem; font-weight: 600; color: var(--primary);">$1,456.78</td>
-                        <td style="padding: 1rem; color: var(--gray-dark);">2 hours ago</td>
-                    </tr>
-                    <!-- Add more customer rows as needed -->
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-
-<!-- Orders Section -->
-<div class="page-section" id="orders-section">
-    <div class="page-header">
-        <h1 class="page-title">Order Management</h1>
-        <div class="page-actions">
-            <button class="btn btn-outline">
-                <i class="fas fa-download"></i> Export
-            </button>
-            <button class="btn btn-primary">
-                <i class="fas fa-plus"></i> Create Order
-            </button>
-        </div>
-    </div>
-
-    <div class="orders-filter glass" style="margin-bottom: 1.5rem; padding: 1rem; display: flex; gap: 1rem; align-items: center;">
-        <div style="flex: 1;">
-            <input type="text" class="form-control" placeholder="Search orders...">
-        </div>
-        <select class="form-control" style="width: 150px;">
-            <option>All Statuses</option>
-            <option>Pending</option>
-            <option>Processing</option>
-            <option>Shipped</option>
-            <option>Delivered</option>
-            <option>Cancelled</option>
-        </select>
-        <div style="position: relative; width: 150px;">
-            <input type="text" class="form-control" placeholder="Select date" readonly>
-            <i class="fas fa-calendar-alt" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--gray);"></i>
-        </div>
-    </div>
-
-    <div class="orders-grid glass" style="padding: 1.5rem;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-            <!-- Order Card 1 -->
-            <div class="order-card" style="border-radius: 8px; overflow: hidden; background: white; box-shadow: var(--shadow-sm);">
-                <div style="padding: 1rem; border-bottom: 1px solid var(--gray-light); display: flex; justify-content: space-between; align-items: center;">
-                    <div style="font-weight: 600;">#ORD-7845</div>
-                    <div style="font-size: 0.75rem; padding: 0.25rem 0.5rem; background: var(--secondary-light); color: var(--secondary); border-radius: 12px; font-weight: 600;">Completed</div>
+                <div class="glass" style="padding: 2rem;">
+                    <p>This is the customers management section. In a real application, this would display customer data and analytics.</p>
                 </div>
-                <div style="padding: 1rem;">
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
-                        <div>
-                            <div style="font-size: 0.8rem; color: var(--gray-dark);">Customer</div>
-                            <div style="font-weight: 600;">Sarah Johnson</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 0.8rem; color: var(--gray-dark);">Date</div>
-                            <div>Today, 10:45 AM</div>
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
-                        <div>
-                            <div style="font-size: 0.8rem; color: var(--gray-dark);">Items</div>
-                            <div>3</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 0.8rem; color: var(--gray-dark);">Total</div>
-                            <div style="font-weight: 700; color: var(--primary);">$245.99</div>
-                        </div>
-                    </div>
-                    <div style="display: flex; gap: 0.5rem;">
-                        <button class="btn btn-outline btn-sm" style="flex: 1;">
-                            <i class="fas fa-eye"></i> View
+            </div>
+
+            <!-- Orders Section -->
+            <div class="page-section" id="orders-section">
+                <div class="page-header">
+                    <h1 class="page-title">Orders</h1>
+                    <div class="page-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Export
                         </button>
-                        <button class="btn btn-outline btn-sm" style="flex: 1;">
-                            <i class="fas fa-print"></i> Invoice
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Create Order
                         </button>
                     </div>
                 </div>
-            </div>
-            <!-- Add more order cards as needed -->
-        </div>
-    </div>
-</div>
-
-<!-- Analytics Section -->
-<div class="page-section" id="analytics-section">
-    <div class="page-header">
-        <h1 class="page-title">Analytics Dashboard</h1>
-        <div class="page-actions">
-            <button class="btn btn-outline">
-                <i class="fas fa-download"></i> Export Report
-            </button>
-        </div>
-    </div>
-
-    <div class="analytics-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-        <div class="glass" style="padding: 1.5rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-                <h3 style="font-size: 1.1rem; font-weight: 600;">Revenue Overview</h3>
-                <select class="form-control" style="width: 150px;">
-                    <option>Last 7 Days</option>
-                    <option>Last 30 Days</option>
-                    <option>Last Quarter</option>
-                    <option>Last Year</option>
-                </select>
-            </div>
-            <div style="height: 300px; background: rgba(0, 0, 0, 0.02); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray);">
-                Revenue Chart Placeholder
-            </div>
-        </div>
-        <div class="glass" style="padding: 1.5rem;">
-            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem;">Top Products</h3>
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-                <div style="display: flex; align-items: center; gap: 1rem;">
-                    <div style="width: 40px; height: 40px; border-radius: 6px; background: #f5f5f5; overflow: hidden;">
-                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div style="flex: 1;">
-                        <div style="font-weight: 600; font-size: 0.9rem;">Wireless Headphones Pro</div>
-                        <div style="font-size: 0.8rem; color: var(--gray-dark);">$199.99</div>
-                    </div>
-                    <div style="font-weight: 700; color: var(--primary);">$24,568</div>
+                <div class="glass" style="padding: 2rem;">
+                    <p>This is the orders management section. In a real application, this would display order history and processing tools.</p>
                 </div>
-                <!-- Add more top products as needed -->
             </div>
-        </div>
-    </div>
 
-    <div class="glass" style="padding: 1.5rem; margin-bottom: 1.5rem;">
-        <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem;">Conversion Funnel</h3>
-        <div style="height: 200px; background: rgba(0, 0, 0, 0.02); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray);">
-            Conversion Funnel Chart Placeholder
-        </div>
-    </div>
-</div>
-
-<!-- Discounts Section -->
-<div class="page-section" id="discounts-section">
-    <div class="page-header">
-        <h1 class="page-title">Discounts & Promotions</h1>
-        <div class="page-actions">
-            <button class="btn btn-primary">
-                <i class="fas fa-plus"></i> Create Promotion
-            </button>
-        </div>
-    </div>
-
-    <div class="discounts-grid glass" style="padding: 1.5rem;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-            <!-- Discount Card 1 -->
-            <div class="discount-card" style="border-radius: 8px; overflow: hidden; background: white; box-shadow: var(--shadow-sm);">
-                <div style="padding: 1rem; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                        <div style="font-weight: 600;">SUMMER25</div>
-                        <div style="font-size: 0.75rem; padding: 0.25rem 0.5rem; background: rgba(255, 255, 255, 0.2); border-radius: 12px;">Active</div>
-                    </div>
-                    <div style="font-size: 1.5rem; font-weight: 700;">25% OFF</div>
+            <!-- Other sections would follow the same pattern -->
+            <div class="page-section" id="analytics-section">
+                <div class="page-header">
+                    <h1 class="page-title">Analytics</h1>
                 </div>
-                <div style="padding: 1rem;">
-                    <div style="margin-bottom: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--gray-dark);">Valid Until</div>
-                        <div>August 31, 2023</div>
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--gray-dark);">Usage</div>
-                        <div>143/500 redemptions</div>
-                    </div>
-                    <div style="display: flex; gap: 0.5rem;">
-                        <button class="btn btn-outline btn-sm" style="flex: 1;">
-                            <i class="fas fa-edit"></i> Edit
-                        </button>
-                        <button class="btn btn-outline btn-sm" style="flex: 1;">
-                            <i class="fas fa-chart-line"></i> Stats
+                <div class="glass" style="padding: 2rem;">
+                    <p>Advanced analytics dashboard would be displayed here.</p>
+                </div>
+            </div>
+
+            <div class="page-section" id="discounts-section">
+                <div class="page-header">
+                    <h1 class="page-title">Discounts & Promotions</h1>
+                    <div class="page-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Create Promotion
                         </button>
                     </div>
                 </div>
-            </div>
-            <!-- Add more discount cards as needed -->
-        </div>
-    </div>
-</div>
-
-<!-- Reviews Section -->
-<div class="page-section" id="reviews-section">
-    <div class="page-header">
-        <h1 class="page-title">Product Reviews</h1>
-        <div class="page-actions">
-            <button class="btn btn-outline">
-                <i class="fas fa-download"></i> Export
-            </button>
-        </div>
-    </div>
-
-    <div class="reviews-filter glass" style="margin-bottom: 1.5rem; padding: 1rem; display: flex; gap: 1rem; align-items: center;">
-        <div style="flex: 1;">
-            <input type="text" class="form-control" placeholder="Search reviews...">
-        </div>
-        <select class="form-control" style="width: 150px;">
-            <option>All Ratings</option>
-            <option>5 Stars</option>
-            <option>4 Stars</option>
-            <option>3 Stars</option>
-            <option>2 Stars</option>
-            <option>1 Star</option>
-        </select>
-        <select class="form-control" style="width: 150px;">
-            <option>All Products</option>
-            <option>Wireless Headphones Pro</option>
-            <option>Smart Watch X4</option>
-            <option>Premium Headphones</option>
-        </select>
-    </div>
-
-    <div class="reviews-list glass" style="padding: 1.5rem;">
-        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-            <!-- Review Item 1 -->
-            <div class="review-item" style="padding: 1.5rem; background: white; border-radius: 8px; box-shadow: var(--shadow-sm);">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
-                    <div style="display: flex; align-items: center; gap: 0.75rem;">
-                        <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600;">SJ</div>
-                        <div>
-                            <div style="font-weight: 600;">Sarah Johnson</div>
-                            <div style="font-size: 0.8rem; color: var(--gray-dark);">July 15, 2023</div>
-                        </div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.25rem; color: var(--warning);">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div style="margin-bottom: 1rem;">
-                    <div style="font-weight: 600; margin-bottom: 0.5rem;">Amazing product!</div>
-                    <div style="color: var(--gray-dark);">These headphones are absolutely worth the price. The sound quality is exceptional and they're very comfortable for long listening sessions.</div>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div style="font-size: 0.8rem; color: var(--gray-dark);">Product: Wireless Headphones Pro</div>
-                    <div style="display: flex; gap: 0.5rem;">
-                        <button class="btn btn-outline btn-sm">
-                            <i class="fas fa-check"></i> Approve
-                        </button>
-                        <button class="btn btn-outline btn-sm">
-                            <i class="fas fa-trash"></i> Delete
-                        </button>
-                    </div>
+                <div class="glass" style="padding: 2rem;">
+                    <p>Discount and promotion management tools would be here.</p>
                 </div>
             </div>
-            <!-- Add more review items as needed -->
-        </div>
-    </div>
-</div>
 
-<!-- Settings Section -->
-<div class="page-section" id="settings-section">
-    <div class="page-header">
-        <h1 class="page-title">Settings</h1>
-    </div>
-
-    <div class="settings-grid glass" style="padding: 1.5rem; display: grid; grid-template-columns: 250px 1fr; gap: 2rem;">
-        <div style="border-right: 1px solid var(--gray-light); padding-right: 1.5rem;">
-            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                <button class="btn btn-outline" style="text-align: left; justify-content: flex-start;" data-settings-tab="general">General</button>
-                <button class="btn btn-outline" style="text-align: left; justify-content: flex-start;" data-settings-tab="payment">Payment</button>
-                <button class="btn btn-outline" style="text-align: left; justify-content: flex-start;" data-settings-tab="shipping">Shipping</button>
-                <button class="btn btn-outline" style="text-align: left; justify-content: flex-start;" data-settings-tab="tax">Tax</button>
-                <button class="btn btn-outline" style="text-align: left; justify-content: flex-start;" data-settings-tab="notifications">Notifications</button>
-                <button class="btn btn-outline" style="text-align: left; justify-content: flex-start;" data-settings-tab="security">Security</button>
-            </div>
-        </div>
-        <div>
-            <div id="general-settings" class="settings-tab">
-                <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem;">General Settings</h3>
-                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                    <div class="form-group">
-                        <label class="form-label">Store Name</label>
-                        <input type="text" class="form-control" value="QuantumShop">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Store Description</label>
-                        <textarea class="form-control" rows="3">Premium electronics and accessories for the modern lifestyle</textarea>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Store Logo</label>
-                        <div style="display: flex; align-items: center; gap: 1rem;">
-                            <div style="width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; color: var(--gray);">
-                                Logo
-                            </div>
-                            <button class="btn btn-outline">Upload New</button>
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: flex-end;">
-                        <button class="btn btn-primary">Save Changes</button>
-                    </div>
+            <div class="page-section" id="reviews-section">
+                <div class="page-header">
+                    <h1 class="page-title">Product Reviews</h1>
+                </div>
+                <div class="glass" style="padding: 2rem;">
+                    <p>Customer reviews and ratings management interface.</p>
                 </div>
             </div>
-            <!-- Other settings tabs would be added here -->
-        </div>
-    </div>
-</div>
 
-<!-- Help & Support Section -->
-<div class="page-section" id="support-section">
-    <div class="page-header">
-        <h1 class="page-title">Help & Support</h1>
-    </div>
+            <div class="page-section" id="settings-section">
+                <div class="page-header">
+                    <h1 class="page-title">Settings</h1>
+                </div>
+                <div class="glass" style="padding: 2rem;">
+                    <p>System configuration and settings would be managed here.</p>
+                </div>
+            </div>
 
-    <div class="support-grid glass" style="padding: 1.5rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-        <!-- Support Card 1 -->
-        <div class="support-card" style="padding: 1.5rem; background: white; border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                <i class="fas fa-book" style="font-size: 1.25rem; color: var(--primary);"></i>
+            <div class="page-section" id="profile-section">
+                <div class="page-header">
+                    <h1 class="page-title">User Profile</h1>
+                </div>
+                <div class="glass" style="padding: 2rem;">
+                    <p>User profile and account settings would be displayed here.</p>
+                </div>
             </div>
-            <div style="font-weight: 600; margin-bottom: 0.5rem;">Documentation</div>
-            <div style="color: var(--gray-dark); margin-bottom: 1.5rem;">Browse our comprehensive documentation to learn how to use all features of QuantumAdmin.</div>
-            <button class="btn btn-outline" style="width: 100%;">View Documentation</button>
-        </div>
-        
-        <!-- Support Card 2 -->
-        <div class="support-card" style="padding: 1.5rem; background: white; border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                <i class="fas fa-video" style="font-size: 1.25rem; color: var(--secondary);"></i>
+
+            <div class="page-section" id="support-section">
+                <div class="page-header">
+                    <h1 class="page-title">Help & Support</h1>
+                </div>
+                <div class="glass" style="padding: 2rem;">
+                    <p>Help documentation and support contact options would be here.</p>
+                </div>
             </div>
-            <div style="font-weight: 600; margin-bottom: 0.5rem;">Video Tutorials</div>
-            <div style="color: var(--gray-dark); margin-bottom: 1.5rem;">Watch step-by-step video tutorials to master QuantumAdmin quickly.</div>
-            <button class="btn btn-outline" style="width: 100%;">Watch Tutorials</button>
-        </div>
-        
-        <!-- Support Card 3 -->
-        <div class="support-card" style="padding: 1.5rem; background: white; border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--warning-light); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                <i class="fas fa-comments" style="font-size: 1.25rem; color: var(--warning);"></i>
-            </div>
-            <div style="font-weight: 600; margin-bottom: 0.5rem;">Community Forum</div>
-            <div style="color: var(--gray-dark); margin-bottom: 1.5rem;">Join our community to ask questions and share knowledge with other users.</div>
-            <button class="btn btn-outline" style="width: 100%;">Visit Forum</button>
-        </div>
-        
-        <!-- Support Card 4 -->
-        <div class="support-card" style="padding: 1.5rem; background: white; border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--danger-light); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                <i class="fas fa-headset" style="font-size: 1.25rem; color: var(--danger);"></i>
-            </div>
-            <div style="font-weight: 600; margin-bottom: 0.5rem;">Contact Support</div>
-            <div style="color: var(--gray-dark); margin-bottom: 1.5rem;">Get in touch with our support team for personalized assistance.</div>
-            <button class="btn btn-outline" style="width: 100%;">Contact Us</button>
-        </div>
-    </div>
-</div>
         </main>
     </div>
 
@@ -2492,14 +2010,6 @@
             </div>
         </div>
     </div>
-
-    <?php 
-    // Critical logic stays on server
-    $secretAlgorithm = function($input) {
-      return substr(md5($input), 0, 10);
-    };
-    ?>
-    <div><?= $secretAlgorithm('data') ?></div>
 
     <script>
         // DOM Elements
@@ -2777,81 +2287,6 @@
                 });
             });
         });
-
-        // Temporary debug
-console.log('Modal elements:', {
-    exportModal: document.getElementById('export-modal'),
-    productModal: document.getElementById('product-modal'),
-    // Add other modals
-});
-
-document.querySelectorAll('[data-section]').forEach(item => {
-    item.addEventListener('click', function(e) {
-        console.log('Section clicked:', this.dataset.section);
-        e.preventDefault();
-    });
-});
-
-
-        // Settings tabs functionality
-const settingsTabs = document.querySelectorAll('[data-settings-tab]');
-settingsTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        // Remove active class from all tabs
-        settingsTabs.forEach(t => t.classList.remove('active'));
-        // Add active class to clicked tab
-        tab.classList.add('active');
-        
-        // Hide all tab contents
-        document.querySelectorAll('.settings-tab').forEach(content => {
-            content.style.display = 'none';
-        });
-        
-        // Show the selected tab content
-        const tabId = tab.getAttribute('data-settings-tab') + '-settings';
-        document.getElementById(tabId).style.display = 'block';
-    });
-});
-
-// Activate the first tab by default
-if (settingsTabs.length > 0) {
-    settingsTabs[0].click();
-}
     </script>
-
-
-    <script>
-        const _0xad3d=['\x48\x65\x6c\x6c\x6f','\x6c\x6f\x67'];(function(_0x3d4e0a,_0xad3d8a){const _0x2d4df8=function(_0x1a8a08){while(--_0x1a8a08){_0x3d4e0a['\x70\x75\x73\x68'](_0x3d4e0a['\x73\x68\x69\x66\x74']());}};_0x2d4df8(++_0xad3d8a);}(_0xad3d,0x65));const _0x2d4d=function(_0x3d4e0a,_0xad3d8a){_0x3d4e0a=_0x3d4e0a-0x0;let _0x2d4df8=_0xad3d[_0x3d4e0a];return _0x2d4df8;};console[_0x2d4d('0x1')](_0x2d4d('0x0'));
-
-        // Main.js - Loads encrypted chunks
-async function loadScript(encrypted) {
-    const code = atob(encrypted).split('').reverse().join('');
-    const script = document.createElement('script');
-    script.text = code;
-    document.body.appendChild(script);
-  }
-  
-  loadScript('==QYjJXZIJ2YjJXZIJ2YjJXZIJ2YjJXZIJ2YjJXZIJ2YjJXZIJ2YjJXZIJ2YjJXZIJ2YjJXZIJ2YjJXZIJ2Y');
-
-  // Load WASM binary
-WebAssembly.instantiateStreaming(fetch('logic.wasm'))
-.then(obj => {
-  obj.instance.exports.doCriticalOperation();
-});
-
-
-// Debugger detection
-setInterval(() => {
-    const start = Date.now();
-    debugger;
-    if (Date.now() - start > 100) {
-      document.body.innerHTML = '<h1>Debugger Detected!</h1>';
-      window.location.reload();
-    }
-  }, 1000);
-        </script>
-
-
-        <script src="script.js"></script>
 </body>
 </html>
